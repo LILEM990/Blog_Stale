@@ -6,17 +6,105 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 柚夏的博客</title>
+  <title>数据库第一章笔记整理 | 柚夏的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小白一枚。记录学习点滴。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="柚夏的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="写在开头 在当前疫情下，各大高校都没有如约开学，进行起了线上教学，没有带课本的我，也因此记下了很多电子笔记，为了可以更好的保存和阅读，故稍作整理上传了博客。 笔记大部分内容为网课PPT，夹杂着一些个人的理解，便于后期阅读">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库第一章笔记整理">
+<meta property="og:url" content="http://yoursite.com/2020/02/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="柚夏的博客">
-<meta property="og:description" content="小白一枚。记录学习点滴。">
+<meta property="og:description" content="写在开头 在当前疫情下，各大高校都没有如约开学，进行起了线上教学，没有带课本的我，也因此记下了很多电子笔记，为了可以更好的保存和阅读，故稍作整理上传了博客。 笔记大部分内容为网课PPT，夹杂着一些个人的理解，便于后期阅读">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cngoD.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cncdO.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnrsx.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnWJH.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnfWd.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cn4SA.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cn5QI.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnIyt.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnoOP.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnHw8.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnbTS.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c32u9.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnLFg.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnOYQ.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnvSs.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnxln.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cnzyq.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuSO0.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuCwT.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuPTU.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuFkF.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cukY4.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuAfJ.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuZlR.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cue61.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuum6.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuK0K.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cuMTO.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwNGR.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwGa4.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwJIJ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwti9.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwaxx.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwBqO.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwgJA.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwfQP.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwodg.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwHij.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwqWn.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwvLT.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cwzeU.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0SwF.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0po4.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0CFJ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0PY9.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0c0U.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c06mT.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0r60.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0Dlq.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cqqQ1.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0g7F.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0WtJ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0fh9.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c04pR.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cqLsx.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3c0511.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cqHzR.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cqOL6.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cLVw8.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cqxoD.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cq0Z8.md.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3g1Eu9.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3czpY8.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cqjeK.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cLuWj.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cLnYQ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cLEef.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOVj1.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cLMSs.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOGjI.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOYut.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOaE8.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cO8gA.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cO33d.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOdUS.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOw4g.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOBCQ.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOD3j.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOrgs.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cOsvn.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cO6uq.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cXRsI.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/03/01/3cXWLt.png">
+<meta property="article:published_time" content="2020-02-29T10:47:19.000Z">
+<meta property="article:modified_time" content="2020-03-01T07:59:51.741Z">
 <meta property="article:author" content="Zhang Chen">
+<meta property="article:tag" content="笔记整理">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/03/01/3cngoD.png">
   
     <link rel="alternative" href="/atom.xml" title="柚夏的博客" type="application/atom+xml">
   
@@ -142,36 +230,255 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据库第一章笔记整理" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-02-29T10:47:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/">数据库第一章笔记整理</a>
+    <h1 class="article-title" itemprop="name">
+      数据库第一章笔记整理
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/02/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-02-29T10:47:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="写在开头"><a href="#写在开头" class="headerlink" title="写在开头"></a>写在开头</h1><blockquote>
+<p>在当前疫情下，各大高校都没有如约开学，进行起了线上教学，没有带课本的我，也因此记下了很多电子笔记，为了可以更好的保存和阅读，故稍作整理上传了博客。</p>
+<p>笔记大部分内容为网课PPT，夹杂着一些个人的理解，便于后期阅读</p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h1 id="1-1-数据库系统概述"><a href="#1-1-数据库系统概述" class="headerlink" title="1.1 数据库系统概述"></a>1.1 数据库系统概述</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><h3 id="一，4位图灵奖得主"><a href="#一，4位图灵奖得主" class="headerlink" title="一，4位图灵奖得主"></a>一，4位图灵奖得主</h3><blockquote>
+<p><strong>1.网状数据库之父</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cngoD" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cngoD.png" alt="3cngoD.png"></a></p>
+<blockquote>
+<p><strong>2.关系数据库之父</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cncdO" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cncdO.md.png" alt="3cncdO.md.png"></a></p>
+<blockquote>
+<p><strong>3.关系数据库设计</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cnrsx" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnrsx.md.png" alt="3cnrsx.md.png"></a></p>
+<blockquote>
+<p><strong>4.大数据之父</strong>     <strong>现代主流数据库系统奠基人</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cnWJH" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnWJH.md.png" alt="3cnWJH.md.png"></a></p>
+<h3 id="二，我国数据库发展"><a href="#二，我国数据库发展" class="headerlink" title="二，我国数据库发展"></a>二，我国数据库发展</h3><p><a href="https://imgchr.com/i/3cnfWd" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnfWd.md.png" alt="3cnfWd.md.png"></a></p>
+<h2 id="数据库的四个基本概念"><a href="#数据库的四个基本概念" class="headerlink" title="数据库的四个基本概念"></a>数据库的四个基本概念</h2><p><a href="https://imgchr.com/i/3cn4SA" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cn4SA.md.png" alt="3cn4SA.md.png"></a></p>
+<h3 id="1-1-数据"><a href="#1-1-数据" class="headerlink" title="1.1  数据"></a>1.1  数据</h3><blockquote>
+<p><strong>数据是数据库中存储的基本对象</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cn5QI" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cn5QI.md.png" alt="3cn5QI.md.png"></a></p>
+<blockquote>
+<p><strong>数据离不开语义的支持</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cnIyt" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnIyt.md.png" alt="3cnIyt.md.png"></a></p>
+<blockquote>
+<p><strong>记录是计算机存储数据的方法</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cnoOP" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnoOP.md.png" alt="3cnoOP.md.png"></a></p>
+<h3 id="1-2-数据库-（DB）"><a href="#1-2-数据库-（DB）" class="headerlink" title="1.2 数据库 （DB）"></a>1.2 数据库 （DB）</h3><blockquote>
+<p><strong>数据库是数据的集合</strong></p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cnHw8" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnHw8.md.png" alt="3cnHw8.md.png"></a></p>
+<h3 id="1-3-数据库管理系统-（DBMS）"><a href="#1-3-数据库管理系统-（DBMS）" class="headerlink" title="1.3 数据库管理系统 （DBMS）"></a>1.3 数据库管理系统 （DBMS）</h3><blockquote>
+<p>是位于用户应用与操作系统直接的管理软件</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cnbTS" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnbTS.md.png" alt="3cnbTS.md.png"></a></p>
+<blockquote>
+<p>平时我们使用的MySql，SqlServer等都是DBMS</p>
+</blockquote>
+<h4 id="1-3-1-DBMS应该包含的主要功能"><a href="#1-3-1-DBMS应该包含的主要功能" class="headerlink" title="1.3.1 DBMS应该包含的主要功能"></a>1.3.1 DBMS应该包含的主要功能</h4><p><a href="https://imgchr.com/i/3c32u9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c32u9.md.png" alt="3c32u9.md.png"></a></p>
+<ol>
+<li>DDL 数据定义语言</li>
+</ol>
+<p>​        <a href="https://imgchr.com/i/3cnLFg" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnLFg.png" alt="3cnLFg.png"></a></p>
+<ol start="2">
+<li><p>DML 数据操纵语言</p>
+<p><a href="https://imgchr.com/i/3cnOYQ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnOYQ.md.png" alt="3cnOYQ.md.png"></a></p>
+</li>
+<li><p>DCL 数据控制语言</p>
+<p><a href="https://imgchr.com/i/3cnvSs" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnvSs.md.png" alt="3cnvSs.md.png"></a></p>
+</li>
+</ol>
+<p>其他相关功能汇总：</p>
+<p><a href="https://imgchr.com/i/3cnxln" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnxln.md.png" alt="3cnxln.md.png"></a></p>
+<p><a href="https://imgchr.com/i/3cnzyq" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cnzyq.md.png" alt="3cnzyq.md.png"></a></p>
+<p><a href="https://imgchr.com/i/3cuSO0" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuSO0.md.png" alt="3cuSO0.md.png"></a></p>
+<h3 id="1-4-数据库系统（DBS）"><a href="#1-4-数据库系统（DBS）" class="headerlink" title="1.4 数据库系统（DBS）"></a>1.4 数据库系统（DBS）</h3><blockquote>
+<p><strong>数据库系统（Data Base System，DBS）是实现有组织的、动态地存储大量关联数据、方便多用户访问的计算机软件、硬件和数据资源组成的系统，简化为：DBS=计算机系统（硬件、软件平台、人）+DBMS+DB</strong></p>
+</blockquote>
+<blockquote>
+<p>　<strong>数据库系统是由数据库，数据管理系统（及其应用开发工具），应用程序和数据库管理员（DBA）组成的存储，管理，处和维护数据的系统</strong></p>
+</blockquote>
+<blockquote>
+<p>　<strong>在一般不引起混淆的情况下，人们常常把数据库系统简称为数据库</strong></p>
+</blockquote>
+<h3 id="2-数据库系统组成"><a href="#2-数据库系统组成" class="headerlink" title="2 数据库系统组成"></a>2 数据库系统组成</h3><p><a href="https://imgchr.com/i/3cuCwT" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuCwT.md.png" alt="3cuCwT.md.png"></a></p>
+<h2 id="数据技术的产生"><a href="#数据技术的产生" class="headerlink" title="数据技术的产生"></a>数据技术的产生</h2><blockquote>
+<p>什么是数据管理</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cuPTU" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuPTU.md.png" alt="3cuPTU.md.png"></a></p>
+<blockquote>
+<p>数据管理系统发展过程</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cuFkF" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuFkF.md.png" alt="3cuFkF.md.png"></a></p>
+<p><a href="https://imgchr.com/i/3cukY4" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cukY4.md.png" alt="3cukY4.md.png"></a></p>
+<h3 id="1-结构化的发展"><a href="#1-结构化的发展" class="headerlink" title="1 结构化的发展"></a>1 结构化的发展</h3><ul>
+<li>人工管理阶段：无结构</li>
+<li>文件系统阶段：记录结构化，文件与文件间无结构化</li>
+<li>数据库系统阶段：整体结构化</li>
+</ul>
+<h3 id="2-人工管理阶段"><a href="#2-人工管理阶段" class="headerlink" title="2 人工管理阶段"></a>2 人工管理阶段</h3><blockquote>
+<p>一 一对应</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cuAfJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuAfJ.md.png" alt="3cuAfJ.md.png"></a></p>
+<h4 id="2-1-特点"><a href="#2-1-特点" class="headerlink" title="2.1 特点"></a>2.1 特点</h4><ol>
+<li>数据不保存</li>
+<li>应用程序管理数据</li>
+<li>数据不共享</li>
+<li>数据不具有独立性</li>
+</ol>
+<h3 id="3-文件系统阶段"><a href="#3-文件系统阶段" class="headerlink" title="3 文件系统阶段"></a>3 文件系统阶段</h3><p><a href="https://imgchr.com/i/3cuZlR" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuZlR.md.png" alt="3cuZlR.md.png"></a></p>
+<h4 id="3-1-特点"><a href="#3-1-特点" class="headerlink" title="3.1 特点"></a>3.1 特点</h4><ol>
+<li>数据可以长期保存</li>
+<li>由文件系统管理数据</li>
+</ol>
+<h4 id="3-2-缺点"><a href="#3-2-缺点" class="headerlink" title="3.2 缺点"></a>3.2 缺点</h4><ol>
+<li>数据共享性差，冗余度大</li>
+<li>数据独立性差</li>
+</ol>
+<h3 id="4-数据库系统阶段"><a href="#4-数据库系统阶段" class="headerlink" title="4 数据库系统阶段"></a>4 数据库系统阶段</h3><p><a href="https://imgchr.com/i/3cue61" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cue61.md.png" alt="3cue61.md.png"></a></p>
+<h4 id="4-1-特点"><a href="#4-1-特点" class="headerlink" title="4.1 特点"></a>4.1 特点</h4><ol>
+<li>数据结构化</li>
+<li>数据共享性高，冗余度低且易扩充</li>
+<li>数据独立性高</li>
+<li>数据由数据管理系统统一管理和控制</li>
+</ol>
+<h2 id="数据系统的特点"><a href="#数据系统的特点" class="headerlink" title="数据系统的特点"></a>数据系统的特点</h2><h3 id="文件系统和数据库系统的对比"><a href="#文件系统和数据库系统的对比" class="headerlink" title="文件系统和数据库系统的对比"></a>文件系统和数据库系统的对比</h3><p>文件系统：<a href="https://imgchr.com/i/3cuum6" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuum6.png" alt="3cuum6.png"></a></p>
+<p>查询和查找需要单独程序 ：<a href="https://imgchr.com/i/3cuK0K" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuK0K.png" alt="3cuK0K.png"></a></p>
+<p>数据库系统：<a href="https://imgchr.com/i/3cuMTO" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cuMTO.md.png" alt="3cuMTO.md.png"></a></p>
+<p>程序员可以专注于数据</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p><a href="https://imgchr.com/i/3cwNGR" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwNGR.md.png" alt="3cwNGR.md.png"></a></p>
+<h4 id="1-结构化"><a href="#1-结构化" class="headerlink" title="1 结构化"></a>1 结构化</h4><p><a href="https://imgchr.com/i/3cwGa4" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwGa4.md.png" alt="3cwGa4.md.png"></a></p>
+<h4 id="2-共享性高-冗余度低-容易扩充"><a href="#2-共享性高-冗余度低-容易扩充" class="headerlink" title="2 共享性高 冗余度低 容易扩充"></a>2 共享性高 冗余度低 容易扩充</h4><p><a href="https://imgchr.com/i/3cwJIJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwJIJ.png" alt="3cwJIJ.png"></a></p>
+<h4 id="3-数据的独立性"><a href="#3-数据的独立性" class="headerlink" title="3 数据的独立性"></a>3 数据的独立性</h4><p><a href="https://imgchr.com/i/3cwti9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwti9.png" alt="3cwti9.png"></a></p>
+<h4 id="4-数据由数据管理系统统一管理和控制"><a href="#4-数据由数据管理系统统一管理和控制" class="headerlink" title="4 数据由数据管理系统统一管理和控制"></a>4 数据由数据管理系统统一管理和控制</h4><p><a href="https://imgchr.com/i/3cwaxx" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwaxx.png" alt="3cwaxx.png"></a></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p><a href="https://imgchr.com/i/3cwBqO" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwBqO.png" alt="3cwBqO.png"></a></p>
+<h1 id="1-2-数据模型"><a href="#1-2-数据模型" class="headerlink" title="1.2 数据模型"></a>1.2 数据模型</h1><p><a href="https://imgchr.com/i/3cwgJA" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwgJA.png" alt="3cwgJA.png"></a></p>
+<h2 id="1-2-1-两类数据模型"><a href="#1-2-1-两类数据模型" class="headerlink" title="1.2.1 两类数据模型"></a>1.2.1 两类数据模型</h2><p><a href="https://imgchr.com/i/3cwfQP" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwfQP.png" alt="3cwfQP.png"></a></p>
+<blockquote>
+<p>数据模型构建过程</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cwodg" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwodg.png" alt="3cwodg.png"></a></p>
+<h2 id="1-2-2-概念模型"><a href="#1-2-2-概念模型" class="headerlink" title="1.2.2 概念模型"></a>1.2.2 概念模型</h2><p><a href="https://imgchr.com/i/3cwHij" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwHij.png" alt="3cwHij.png"></a></p>
+<h3 id="1-信息世界中的基本概念"><a href="#1-信息世界中的基本概念" class="headerlink" title="1 信息世界中的基本概念"></a>1 信息世界中的基本概念</h3><ol>
+<li>实体</li>
+<li>属性</li>
+<li>码（主键）</li>
+<li>实体型</li>
+<li>实体集</li>
+<li>联系</li>
+</ol>
+<p><a href="https://imgchr.com/i/3cwqWn" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwqWn.png" alt="3cwqWn.png"></a></p>
+<blockquote>
+<p>例如：学生（包括他的所以属性）是一个实体型  </p>
+<p>​            所有学生是一个实体集</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cwvLT" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwvLT.png" alt="3cwvLT.png"></a></p>
+<blockquote>
+<p>例如：A是课程，B是学生    属于多对多的联系</p>
+</blockquote>
+<h3 id="2-概念模型表示方法"><a href="#2-概念模型表示方法" class="headerlink" title="2 概念模型表示方法"></a>2 概念模型表示方法</h3><p><a href="https://imgchr.com/i/3cwzeU" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cwzeU.png" alt="3cwzeU.png"></a></p>
+<h2 id="1-2-3-数据模型的组成要素"><a href="#1-2-3-数据模型的组成要素" class="headerlink" title="1.2.3 数据模型的组成要素"></a>1.2.3 数据模型的组成要素</h2><p><a href="https://imgchr.com/i/3c0SwF" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0SwF.png" alt="3c0SwF.png"></a></p>
+<h3 id="1-数据结构"><a href="#1-数据结构" class="headerlink" title="1 数据结构"></a>1 数据结构</h3><p><a href="https://imgchr.com/i/3c0po4" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0po4.png" alt="3c0po4.png"></a></p>
+<h3 id="2-数据操作"><a href="#2-数据操作" class="headerlink" title="2 数据操作"></a>2 数据操作</h3><p><a href="https://imgchr.com/i/3c0CFJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0CFJ.png" alt="3c0CFJ.png"></a></p>
+<h3 id="3-数据的完整性约束条件"><a href="#3-数据的完整性约束条件" class="headerlink" title="3 数据的完整性约束条件"></a>3 数据的完整性约束条件</h3><p><a href="https://imgchr.com/i/3c0PY9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0PY9.png" alt="3c0PY9.png"></a></p>
+<blockquote>
+<p>分割线</p>
+</blockquote>
+<h2 id="1-2-4-常用的数据模型"><a href="#1-2-4-常用的数据模型" class="headerlink" title="1.2.4 常用的数据模型"></a>1.2.4 常用的数据模型</h2><p><a href="https://imgchr.com/i/3c0c0U" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0c0U.png" alt="3c0c0U.png"></a></p>
+<h2 id="1-2-5-层次模型"><a href="#1-2-5-层次模型" class="headerlink" title="1.2.5 层次模型"></a>1.2.5 层次模型</h2><blockquote>
+<p>树模型</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3c06mT" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c06mT.png" alt="3c06mT.png"></a></p>
+<h3 id="1-层次模型的数据结构"><a href="#1-层次模型的数据结构" class="headerlink" title="1 层次模型的数据结构"></a>1 层次模型的数据结构</h3><p><a href="https://imgchr.com/i/3c0r60" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0r60.png" alt="3c0r60.png"></a></p>
+<h4 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h4><p><a href="https://imgchr.com/i/3c0Dlq" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0Dlq.png" alt="3c0Dlq.png"></a></p>
+<blockquote>
+<p>左是型    右是值</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cqqQ1" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cqqQ1.png" alt="3cqqQ1.png"></a></p>
+<blockquote>
+<p>虚记录（虚指针）打破了一对多的关系</p>
+</blockquote>
+<h3 id="2-层次模型的数据操纵与完整性约束"><a href="#2-层次模型的数据操纵与完整性约束" class="headerlink" title="2 层次模型的数据操纵与完整性约束"></a>2 层次模型的数据操纵与完整性约束</h3><p><a href="https://imgchr.com/i/3c0g7F" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0g7F.png" alt="3c0g7F.png"></a></p>
+<h3 id="3-层次模型的优缺点"><a href="#3-层次模型的优缺点" class="headerlink" title="3 层次模型的优缺点"></a>3 层次模型的优缺点</h3><p><a href="https://imgchr.com/i/3c0WtJ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0WtJ.png" alt="3c0WtJ.png"></a></p>
+<blockquote>
+<p>优点：层次关系密切</p>
+<p>缺点：表现不了多对多</p>
+<p>​            根结点无双亲</p>
+</blockquote>
+<h2 id="1-2-6-网状模型"><a href="#1-2-6-网状模型" class="headerlink" title="1.2.6 网状模型"></a>1.2.6 网状模型</h2><p><a href="https://imgchr.com/i/3c0fh9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0fh9.png" alt="3c0fh9.png"></a></p>
+<h3 id="1-网状模型的数据结构"><a href="#1-网状模型的数据结构" class="headerlink" title="1 网状模型的数据结构"></a>1 网状模型的数据结构</h3><p><a href="https://imgchr.com/i/3c04pR" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c04pR.png" alt="3c04pR.png"></a></p>
+<h4 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h4><p><a href="https://imgchr.com/i/3cqLsx" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cqLsx.png" alt="3cqLsx.png"></a></p>
+<p><a href="https://imgchr.com/i/3c0511" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3c0511.png" alt="3c0511.png"></a></p>
+<h4 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h4><p><a href="https://imgchr.com/i/3cqHzR" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cqHzR.png" alt="3cqHzR.png"></a></p>
+<p><a href="https://imgchr.com/i/3cqOL6" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cqOL6.png" alt="3cqOL6.png"></a></p>
+<p><a href="https://imgchr.com/i/3cLVw8" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cLVw8.png" alt="3cLVw8.png"></a></p>
+<p><a href="https://imgchr.com/i/3cqxoD" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cqxoD.png" alt="3cqxoD.png"></a></p>
+<h3 id="2-网状模型的数据操纵与完整性约束"><a href="#2-网状模型的数据操纵与完整性约束" class="headerlink" title="2 网状模型的数据操纵与完整性约束"></a>2 网状模型的数据操纵与完整性约束</h3><p><a href="https://imgchr.com/i/3cq0Z8" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cq0Z8.md.png" alt="3cq0Z8.md.png"></a></p>
+<p><a href="https://imgchr.com/i/3g1Eu9" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3g1Eu9.png" alt="3g1Eu9.png"></a></p>
+<h3 id="3-网状模型的优缺点"><a href="#3-网状模型的优缺点" class="headerlink" title="3 网状模型的优缺点"></a>3 网状模型的优缺点</h3><p><a href="https://imgchr.com/i/3czpY8" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3czpY8.png" alt="3czpY8.png"></a></p>
+<blockquote>
+<p>优点：</p>
+<p>缺点：数据量大的时候，程序员工作量很大，数据库系统的好坏取决与程序员水平高低</p>
+</blockquote>
+<h2 id="1-2-7-关系模型"><a href="#1-2-7-关系模型" class="headerlink" title="1.2.7 关系模型"></a>1.2.7 关系模型</h2><p><a href="https://imgchr.com/i/3cqjeK" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cqjeK.png" alt="3cqjeK.png"></a></p>
+<h3 id="1-关系模型的数据结构"><a href="#1-关系模型的数据结构" class="headerlink" title="1 关系模型的数据结构"></a>1 关系模型的数据结构</h3><p><a href="https://imgchr.com/i/3cLuWj" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cLuWj.png" alt="3cLuWj.png"></a></p>
+<h4 id="术语介绍"><a href="#术语介绍" class="headerlink" title="术语介绍"></a>术语介绍</h4><p><a href="https://imgchr.com/i/3cLnYQ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cLnYQ.png" alt="3cLnYQ.png"></a></p>
+<p><a href="https://imgchr.com/i/3cLEef" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cLEef.png" alt="3cLEef.png"></a></p>
+<h4 id="规范条件"><a href="#规范条件" class="headerlink" title="规范条件"></a>规范条件</h4><blockquote>
+<p>不可以“表中有表”</p>
+</blockquote>
+<p><a href="https://imgchr.com/i/3cOVj1" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOVj1.png" alt="3cOVj1.png"></a></p>
+<h3 id="2-关系模型的操纵与完整性约束"><a href="#2-关系模型的操纵与完整性约束" class="headerlink" title="2 关系模型的操纵与完整性约束"></a>2 关系模型的操纵与完整性约束</h3><p><a href="https://imgchr.com/i/3cLMSs" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cLMSs.png" alt="3cLMSs.png"></a></p>
+<p><a href="https://imgchr.com/i/3cOGjI" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOGjI.png" alt="3cOGjI.png"></a></p>
+<h3 id="3-关系模型的优缺点"><a href="#3-关系模型的优缺点" class="headerlink" title="3 关系模型的优缺点"></a>3 关系模型的优缺点</h3><p><a href="https://imgchr.com/i/3cOYut" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOYut.png" alt="3cOYut.png"></a></p>
+<p><a href="https://imgchr.com/i/3cOaE8" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOaE8.png" alt="3cOaE8.png"></a></p>
+<h1 id="1-3-数据库系统的结构"><a href="#1-3-数据库系统的结构" class="headerlink" title="1.3 数据库系统的结构"></a>1.3 数据库系统的结构</h1><p><a href="https://imgchr.com/i/3cO8gA" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cO8gA.png" alt="3cO8gA.png"></a></p>
+<h2 id="1-3-1-数据库系统模式的概念"><a href="#1-3-1-数据库系统模式的概念" class="headerlink" title="1.3.1 数据库系统模式的概念"></a>1.3.1 数据库系统模式的概念</h2><p><a href="https://imgchr.com/i/3cO33d" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cO33d.png" alt="3cO33d.png"></a></p>
+<h3 id="实例-2"><a href="#实例-2" class="headerlink" title="实例"></a>实例</h3><p><a href="https://imgchr.com/i/3cOdUS" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOdUS.png" alt="3cOdUS.png"></a></p>
+<blockquote>
+<p>数据不一样，模式相同</p>
+</blockquote>
+<h2 id="1-3-2-数据库系统的三级模式结构"><a href="#1-3-2-数据库系统的三级模式结构" class="headerlink" title="1.3.2 数据库系统的三级模式结构"></a>1.3.2 数据库系统的三级模式结构</h2><p><a href="https://imgchr.com/i/3cOw4g" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOw4g.png" alt="3cOw4g.png"></a></p>
+<h3 id="1-模式"><a href="#1-模式" class="headerlink" title="1 模式"></a>1 模式</h3><p><a href="https://imgchr.com/i/3cOBCQ" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOBCQ.png" alt="3cOBCQ.png"></a></p>
+<h3 id="2-外模式"><a href="#2-外模式" class="headerlink" title="2 外模式"></a>2 外模式</h3><p><a href="https://imgchr.com/i/3cOD3j" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOD3j.png" alt="3cOD3j.png"></a></p>
+<blockquote>
+<p>用户只能看见外模式，看不见模式</p>
+</blockquote>
+<h3 id="3-内模式"><a href="#3-内模式" class="headerlink" title="3 内模式"></a>3 内模式</h3><p><a href="https://imgchr.com/i/3cOrgs" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOrgs.png" alt="3cOrgs.png"></a></p>
+<h2 id="1-3-3-数据库的二级映像功能与数据独立性"><a href="#1-3-3-数据库的二级映像功能与数据独立性" class="headerlink" title="1.3.3 数据库的二级映像功能与数据独立性"></a>1.3.3 数据库的二级映像功能与数据独立性</h2><p><a href="https://imgchr.com/i/3cOsvn" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cOsvn.png" alt="3cOsvn.png"></a></p>
+<h3 id="1-外模式-模式映像"><a href="#1-外模式-模式映像" class="headerlink" title="1 外模式/模式映像"></a>1 外模式/模式映像</h3><p><a href="https://imgchr.com/i/3cO6uq" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cO6uq.png" alt="3cO6uq.png"></a></p>
+<h3 id="2-模式-内模式映像"><a href="#2-模式-内模式映像" class="headerlink" title="2 模式/内模式映像"></a>2 模式/内模式映像</h3><p><a href="https://imgchr.com/i/3cXRsI" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cXRsI.png" alt="3cXRsI.png"></a></p>
+<h3 id="3-数据库的二级映像功能与数据独立性"><a href="#3-数据库的二级映像功能与数据独立性" class="headerlink" title="3 数据库的二级映像功能与数据独立性"></a>3 数据库的二级映像功能与数据独立性</h3><p><a href="https://imgchr.com/i/3cXWLt" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/03/01/3cXWLt.png" alt="3cXWLt.png"></a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,103 +494,149 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/18/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%82%82%E9%80%85%E2%80%94%E2%80%94%E6%88%91%E4%B8%8EIDEA/" class="archive-article-date">
-  	<time datetime="2020-02-18T12:59:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/18/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%82%82%E9%80%85%E2%80%94%E2%80%94%E6%88%91%E4%B8%8EIDEA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">记一次邂逅——我与IDEA</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/18/%E8%AE%B0%E4%B8%80%E6%AC%A1%E9%82%82%E9%80%85%E2%80%94%E2%80%94%E6%88%91%E4%B8%8EIDEA/">记一次邂逅——我与IDEA</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">IDEA</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">IDE</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在开头"><span class="toc-number">1.</span> <span class="toc-text">写在开头</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章"><span class="toc-number">2.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-1-数据库系统概述"><span class="toc-number">3.</span> <span class="toc-text">1.1 数据库系统概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#引言"><span class="toc-number">3.1.</span> <span class="toc-text">引言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一，4位图灵奖得主"><span class="toc-number">3.1.1.</span> <span class="toc-text">一，4位图灵奖得主</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二，我国数据库发展"><span class="toc-number">3.1.2.</span> <span class="toc-text">二，我国数据库发展</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库的四个基本概念"><span class="toc-number">3.2.</span> <span class="toc-text">数据库的四个基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-数据"><span class="toc-number">3.2.1.</span> <span class="toc-text">1.1  数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-数据库-（DB）"><span class="toc-number">3.2.2.</span> <span class="toc-text">1.2 数据库 （DB）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-数据库管理系统-（DBMS）"><span class="toc-number">3.2.3.</span> <span class="toc-text">1.3 数据库管理系统 （DBMS）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-1-DBMS应该包含的主要功能"><span class="toc-number">3.2.3.1.</span> <span class="toc-text">1.3.1 DBMS应该包含的主要功能</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-数据库系统（DBS）"><span class="toc-number">3.2.4.</span> <span class="toc-text">1.4 数据库系统（DBS）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-数据库系统组成"><span class="toc-number">3.2.5.</span> <span class="toc-text">2 数据库系统组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据技术的产生"><span class="toc-number">3.3.</span> <span class="toc-text">数据技术的产生</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-结构化的发展"><span class="toc-number">3.3.1.</span> <span class="toc-text">1 结构化的发展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-人工管理阶段"><span class="toc-number">3.3.2.</span> <span class="toc-text">2 人工管理阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-特点"><span class="toc-number">3.3.2.1.</span> <span class="toc-text">2.1 特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-文件系统阶段"><span class="toc-number">3.3.3.</span> <span class="toc-text">3 文件系统阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-特点"><span class="toc-number">3.3.3.1.</span> <span class="toc-text">3.1 特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-缺点"><span class="toc-number">3.3.3.2.</span> <span class="toc-text">3.2 缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-数据库系统阶段"><span class="toc-number">3.3.4.</span> <span class="toc-text">4 数据库系统阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-特点"><span class="toc-number">3.3.4.1.</span> <span class="toc-text">4.1 特点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据系统的特点"><span class="toc-number">3.4.</span> <span class="toc-text">数据系统的特点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文件系统和数据库系统的对比"><span class="toc-number">3.4.1.</span> <span class="toc-text">文件系统和数据库系统的对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特点"><span class="toc-number">3.4.2.</span> <span class="toc-text">特点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-结构化"><span class="toc-number">3.4.2.1.</span> <span class="toc-text">1 结构化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-共享性高-冗余度低-容易扩充"><span class="toc-number">3.4.2.2.</span> <span class="toc-text">2 共享性高 冗余度低 容易扩充</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-数据的独立性"><span class="toc-number">3.4.2.3.</span> <span class="toc-text">3 数据的独立性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-数据由数据管理系统统一管理和控制"><span class="toc-number">3.4.2.4.</span> <span class="toc-text">4 数据由数据管理系统统一管理和控制</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小结"><span class="toc-number">3.5.</span> <span class="toc-text">小结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-2-数据模型"><span class="toc-number">4.</span> <span class="toc-text">1.2 数据模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-1-两类数据模型"><span class="toc-number">4.1.</span> <span class="toc-text">1.2.1 两类数据模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-2-概念模型"><span class="toc-number">4.2.</span> <span class="toc-text">1.2.2 概念模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-信息世界中的基本概念"><span class="toc-number">4.2.1.</span> <span class="toc-text">1 信息世界中的基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-概念模型表示方法"><span class="toc-number">4.2.2.</span> <span class="toc-text">2 概念模型表示方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-3-数据模型的组成要素"><span class="toc-number">4.3.</span> <span class="toc-text">1.2.3 数据模型的组成要素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-数据结构"><span class="toc-number">4.3.1.</span> <span class="toc-text">1 数据结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-数据操作"><span class="toc-number">4.3.2.</span> <span class="toc-text">2 数据操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-数据的完整性约束条件"><span class="toc-number">4.3.3.</span> <span class="toc-text">3 数据的完整性约束条件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-4-常用的数据模型"><span class="toc-number">4.4.</span> <span class="toc-text">1.2.4 常用的数据模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-5-层次模型"><span class="toc-number">4.5.</span> <span class="toc-text">1.2.5 层次模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-层次模型的数据结构"><span class="toc-number">4.5.1.</span> <span class="toc-text">1 层次模型的数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例"><span class="toc-number">4.5.1.1.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-层次模型的数据操纵与完整性约束"><span class="toc-number">4.5.2.</span> <span class="toc-text">2 层次模型的数据操纵与完整性约束</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-层次模型的优缺点"><span class="toc-number">4.5.3.</span> <span class="toc-text">3 层次模型的优缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-6-网状模型"><span class="toc-number">4.6.</span> <span class="toc-text">1.2.6 网状模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-网状模型的数据结构"><span class="toc-number">4.6.1.</span> <span class="toc-text">1 网状模型的数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例-1"><span class="toc-number">4.6.1.1.</span> <span class="toc-text">实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#具体实现"><span class="toc-number">4.6.1.2.</span> <span class="toc-text">具体实现</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-网状模型的数据操纵与完整性约束"><span class="toc-number">4.6.2.</span> <span class="toc-text">2 网状模型的数据操纵与完整性约束</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-网状模型的优缺点"><span class="toc-number">4.6.3.</span> <span class="toc-text">3 网状模型的优缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-7-关系模型"><span class="toc-number">4.7.</span> <span class="toc-text">1.2.7 关系模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-关系模型的数据结构"><span class="toc-number">4.7.1.</span> <span class="toc-text">1 关系模型的数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#术语介绍"><span class="toc-number">4.7.1.1.</span> <span class="toc-text">术语介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#规范条件"><span class="toc-number">4.7.1.2.</span> <span class="toc-text">规范条件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-关系模型的操纵与完整性约束"><span class="toc-number">4.7.2.</span> <span class="toc-text">2 关系模型的操纵与完整性约束</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-关系模型的优缺点"><span class="toc-number">4.7.3.</span> <span class="toc-text">3 关系模型的优缺点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-3-数据库系统的结构"><span class="toc-number">5.</span> <span class="toc-text">1.3 数据库系统的结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-1-数据库系统模式的概念"><span class="toc-number">5.1.</span> <span class="toc-text">1.3.1 数据库系统模式的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实例-2"><span class="toc-number">5.1.1.</span> <span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-2-数据库系统的三级模式结构"><span class="toc-number">5.2.</span> <span class="toc-text">1.3.2 数据库系统的三级模式结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-模式"><span class="toc-number">5.2.1.</span> <span class="toc-text">1 模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-外模式"><span class="toc-number">5.2.2.</span> <span class="toc-text">2 外模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-内模式"><span class="toc-number">5.2.3.</span> <span class="toc-text">3 内模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-3-数据库的二级映像功能与数据独立性"><span class="toc-number">5.3.</span> <span class="toc-text">1.3.3 数据库的二级映像功能与数据独立性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-外模式-模式映像"><span class="toc-number">5.3.1.</span> <span class="toc-text">1 外模式&#x2F;模式映像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-模式-内模式映像"><span class="toc-number">5.3.2.</span> <span class="toc-text">2 模式&#x2F;内模式映像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-数据库的二级映像功能与数据独立性"><span class="toc-number">5.3.3.</span> <span class="toc-text">3 数据库的二级映像功能与数据独立性</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/02/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%AE%B0%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2020-02-17T03:21:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-17</time>
-</a>
-        </div>
-    	 
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="数据库第一章笔记整理" data-title="数据库第一章笔记整理" data-url="http://yoursite.com/2020/02/29/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"litten-hexo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/17/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E8%AE%B0%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/">第一篇博客——记博客搭建过程</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Hello Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">博客搭建</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
+  <div id="SOHUCS" sid="数据库第一章笔记整理" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "cysX3aGWt",
+        conf: "prod_1dcda447175aada96edcdb7e412338fa"
+    });
+</script>
+</script>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -306,8 +659,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
